@@ -19,6 +19,8 @@ import tushargaurautomation.pageobjects.ProductCatalogue;
 public class SubmitOrderTest extends BaseTest {
 	String productName = "IPHONE 13 PRO";
 
+	// Added new comments to test CICI setup
+
 	@Test(dataProvider = "getData", groups = "Purchase")
 	public void submitOrder(HashMap<String, String> input) throws IOException, InterruptedException {
 		ProductCatalogue productCatalogue = landingPage.loginApplication(input.get("username"), input.get("password"));
