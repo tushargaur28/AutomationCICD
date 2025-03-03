@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="3" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-03-04T02:32:53 IST" name="Suite" finished-at="2025-03-04T02:33:35 IST" duration-ms="42402">
+  <suite started-at="2025-03-04T02:57:26 IST" name="Suite" finished-at="2025-03-04T02:58:12 IST" duration-ms="45713">
     <groups>
       <group name="ErrorHandling">
         <method signature="ErrorValidationsTest.LoginErrorValidation()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" name="LoginErrorValidation" class="tushargaurautomation.tests.ErrorValidationsTest"/>
@@ -12,25 +12,25 @@
         <method signature="SubmitOrderTest.submitOrder(java.util.HashMap)[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" name="submitOrder" class="tushargaurautomation.tests.SubmitOrderTest"/>
       </group> <!-- Purchase -->
     </groups>
-    <test started-at="2025-03-04T02:32:53 IST" name="Submit Order Test" finished-at="2025-03-04T02:33:21 IST" duration-ms="28519">
+    <test started-at="2025-03-04T02:57:26 IST" name="Submit Order Test" finished-at="2025-03-04T02:57:57 IST" duration-ms="30762">
       <class name="tushargaurautomation.tests.SubmitOrderTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:32:53 IST" name="launchApplication" finished-at="2025-03-04T02:32:54 IST" duration-ms="1794" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:26 IST" name="launchApplication" finished-at="2025-03-04T02:57:28 IST" duration-ms="2136" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="OrderHistoryTest()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:32:54 IST" name="OrderHistoryTest" finished-at="2025-03-04T02:32:55 IST" duration-ms="361" status="PASS">
+        <test-method signature="OrderHistoryTest()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:28 IST" name="OrderHistoryTest" finished-at="2025-03-04T02:57:29 IST" duration-ms="351" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- OrderHistoryTest -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:32:55 IST" name="Teardown" finished-at="2025-03-04T02:32:55 IST" duration-ms="113" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:29 IST" name="Teardown" finished-at="2025-03-04T02:57:29 IST" duration-ms="114" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:32:55 IST" name="launchApplication" finished-at="2025-03-04T02:32:56 IST" duration-ms="1369" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:29 IST" name="launchApplication" finished-at="2025-03-04T02:57:31 IST" duration-ms="1673" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:32:56 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-04T02:33:08 IST" duration-ms="11162" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:31 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-04T02:57:43 IST" duration-ms="12089" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -38,18 +38,91 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1054, 652)
+  (Session info: chrome=133.0.6943.142)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b59e0f3c16b212b4a415634b6d703efe, clickElement {id=f.BEF187526805E08DD0847582290092DA.d.B4F153741A85700073E43D3F8D299759.e.121}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/lh/nnhkqjf54y5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50068/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (b59e0f3c16b212b4a415634b6d703efe)] -> css selector: .action__submit]
+Session ID: b59e0f3c16b212b4a415634b6d703efe]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1054, 652)
+  (Session info: chrome=133.0.6943.142)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [b59e0f3c16b212b4a415634b6d703efe, clickElement {id=f.BEF187526805E08DD0847582290092DA.d.B4F153741A85700073E43D3F8D299759.e.121}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/lh/nnhkqjf54y5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50068}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50068/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (b59e0f3c16b212b4a415634b6d703efe)] -> css selector: .action__submit]
+Session ID: b59e0f3c16b212b4a415634b6d703efe
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at tushargaurautomation.pageobjects.CheckoutPage.submitOrder(CheckoutPage.java:45)
+at tushargaurautomation.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:33:08 IST" name="Teardown" finished-at="2025-03-04T02:33:08 IST" duration-ms="112" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:43 IST" name="Teardown" finished-at="2025-03-04T02:57:43 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:33:08 IST" name="launchApplication" finished-at="2025-03-04T02:33:10 IST" duration-ms="2265" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:43 IST" name="launchApplication" finished-at="2025-03-04T02:57:45 IST" duration-ms="1671" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:33:10 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-04T02:33:21 IST" duration-ms="11151" status="PASS">
+        <test-method signature="submitOrder(java.util.HashMap)[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:45 IST" name="submitOrder" data-provider="getData" finished-at="2025-03-04T02:57:57 IST" duration-ms="12158" status="FAIL">
           <params>
             <param index="0">
               <value>
@@ -57,38 +130,111 @@
               </value>
             </param>
           </params>
+          <exception class="org.openqa.selenium.ElementClickInterceptedException">
+            <message>
+              <![CDATA[element click intercepted: Element is not clickable at point (1054, 653)
+  (Session info: chrome=133.0.6943.142)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d238098c3dd82fff24b5bdfd15394042, clickElement {id=f.4DD56551E06767E11D5B51B7DB569C38.d.5D34ED086DFE81747216724061C39FA4.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/lh/nnhkqjf54y5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d238098c3dd82fff24b5bdfd15394042)] -> css selector: .action__submit]
+Session ID: d238098c3dd82fff24b5bdfd15394042]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[org.openqa.selenium.ElementClickInterceptedException: element click intercepted: Element is not clickable at point (1054, 653)
+  (Session info: chrome=133.0.6943.142)
+Build info: version: '4.29.0', revision: '5fc1ec94cb'
+System info: os.name: 'Mac OS X', os.arch: 'aarch64', os.version: '15.3.1', java.version: '21.0.6'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [d238098c3dd82fff24b5bdfd15394042, clickElement {id=f.4DD56551E06767E11D5B51B7DB569C38.d.5D34ED086DFE81747216724061C39FA4.e.122}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 133.0.6943.142, chrome: {chromedriverVersion: 133.0.6943.141 (2a5d6da0d61..., userDataDir: /var/folders/lh/nnhkqjf54y5...}, fedcm:accounts: true, goog:chromeOptions: {debuggerAddress: localhost:50090}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: mac, proxy: Proxy(), se:cdp: ws://localhost:50090/devtoo..., se:cdpVersion: 133.0.6943.142, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Element: [[ChromeDriver: chrome on mac (d238098c3dd82fff24b5bdfd15394042)] -> css selector: .action__submit]
+Session ID: d238098c3dd82fff24b5bdfd15394042
+at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:62)
+at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:502)
+at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:486)
+at org.openqa.selenium.remote.ErrorCodec.decode(ErrorCodec.java:167)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:138)
+at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:50)
+at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:215)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:216)
+at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:174)
+at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:545)
+at org.openqa.selenium.remote.RemoteWebElement.execute(RemoteWebElement.java:223)
+at org.openqa.selenium.remote.RemoteWebElement.click(RemoteWebElement.java:76)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:51)
+at jdk.proxy2/jdk.proxy2.$Proxy12.click(Unknown Source)
+at tushargaurautomation.pageobjects.CheckoutPage.submitOrder(CheckoutPage.java:45)
+at tushargaurautomation.tests.SubmitOrderTest.submitOrder(SubmitOrderTest.java:35)
+at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:103)
+at java.base/java.lang.reflect.Method.invoke(Method.java:580)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:141)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:687)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:230)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:63)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:995)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:203)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:154)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:134)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+at org.testng.TestRunner.privateRun(TestRunner.java:741)
+at org.testng.TestRunner.run(TestRunner.java:616)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:421)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:413)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:373)
+at org.testng.SuiteRunner.run(SuiteRunner.java:312)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1274)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1208)
+at org.testng.TestNG.runSuites(TestNG.java:1112)
+at org.testng.TestNG.run(TestNG.java:1079)
+at org.apache.maven.surefire.testng.TestNGExecutor.run(TestNGExecutor.java:308)
+at org.apache.maven.surefire.testng.TestNGXmlTestSuite.execute(TestNGXmlTestSuite.java:71)
+at org.apache.maven.surefire.testng.TestNGProvider.invoke(TestNGProvider.java:113)
+at org.apache.maven.surefire.booter.ForkedBooter.runSuitesInProcess(ForkedBooter.java:385)
+at org.apache.maven.surefire.booter.ForkedBooter.execute(ForkedBooter.java:162)
+at org.apache.maven.surefire.booter.ForkedBooter.run(ForkedBooter.java:507)
+at org.apache.maven.surefire.booter.ForkedBooter.main(ForkedBooter.java:495)
+]]>
+            </full-stacktrace>
+          </exception> <!-- org.openqa.selenium.ElementClickInterceptedException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- submitOrder -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:33:21 IST" name="Teardown" finished-at="2025-03-04T02:33:21 IST" duration-ms="116" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.SubmitOrderTest@548a24a]" started-at="2025-03-04T02:57:57 IST" name="Teardown" finished-at="2025-03-04T02:57:57 IST" duration-ms="110" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
       </class> <!-- tushargaurautomation.tests.SubmitOrderTest -->
     </test> <!-- Submit Order Test -->
-    <test started-at="2025-03-04T02:33:21 IST" name="Error Validations Test" finished-at="2025-03-04T02:33:35 IST" duration-ms="13786">
+    <test started-at="2025-03-04T02:57:57 IST" name="Error Validations Test" finished-at="2025-03-04T02:58:12 IST" duration-ms="14833">
       <class name="tushargaurautomation.tests.ErrorValidationsTest">
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:33:21 IST" name="launchApplication" finished-at="2025-03-04T02:33:23 IST" duration-ms="1404" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:57:57 IST" name="launchApplication" finished-at="2025-03-04T02:57:59 IST" duration-ms="1670" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="LoginErrorValidation()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:33:23 IST" name="LoginErrorValidation" finished-at="2025-03-04T02:33:23 IST" duration-ms="304" status="PASS">
+        <test-method signature="LoginErrorValidation()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:57:59 IST" name="LoginErrorValidation" finished-at="2025-03-04T02:57:59 IST" duration-ms="776" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- LoginErrorValidation -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:33:23 IST" name="Teardown" finished-at="2025-03-04T02:33:23 IST" duration-ms="110" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:57:59 IST" name="Teardown" finished-at="2025-03-04T02:58:00 IST" duration-ms="112" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
-        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:33:23 IST" name="launchApplication" finished-at="2025-03-04T02:33:24 IST" duration-ms="1323" status="PASS">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:58:00 IST" name="launchApplication" finished-at="2025-03-04T02:58:01 IST" duration-ms="1602" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchApplication -->
-        <test-method signature="ProductErrorValidation()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:33:24 IST" name="ProductErrorValidation" finished-at="2025-03-04T02:33:35 IST" duration-ms="10533" status="PASS">
+        <test-method signature="ProductErrorValidation()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:58:01 IST" name="ProductErrorValidation" finished-at="2025-03-04T02:58:12 IST" duration-ms="10559" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- ProductErrorValidation -->
-        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:33:35 IST" name="Teardown" finished-at="2025-03-04T02:33:35 IST" duration-ms="109" status="PASS">
+        <test-method is-config="true" signature="Teardown()[pri:0, instance:tushargaurautomation.tests.ErrorValidationsTest@1807f5a7]" started-at="2025-03-04T02:58:12 IST" name="Teardown" finished-at="2025-03-04T02:58:12 IST" duration-ms="111" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Teardown -->
