@@ -6,7 +6,7 @@ A robust, maintainable UI test automation framework built using **Selenium WebDr
 
 ## 🔧 Tech Stack
 
-- Java 11+
+- Java 21
 - Selenium WebDriver
 - TestNG
 - Maven
